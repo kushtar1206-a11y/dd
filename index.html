@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Металдардың Қазақстан бойынша таралуы</title>
+<style>
+body {
+    background: #1a1a1a; /* терең қара фон */
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+.map-container {
+    display: flex;
+    gap: 20px;
+}
+
+.map-left {
+    flex: 1;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    padding: 10px;
+    transition: background 0.5s ease;
+}
+
+.map-left .element {
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.map-left .element:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2a2a2a;
+    transition: background 0.5s ease;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #3a3a3a;
+}
+
+tr:hover {
+    background: #444;
+}
+
+.concentration {
+    font-weight: bold;
+    color: #ffd700; /* алтын түс концентрация үшін */
+}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        color: #222;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    /* Сол жақ панель */
+    .sidebar {
+        width: 25%;
+        background: #ffffff;
+        border-right: 2px solid #e3e3e3;
+        padding: 20px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+    .sidebar h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #005bbb;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    table td {
+        padding: 12px;
+        border: 1px solid #dcdcdc;
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    table td:hover {
+        background: #e8f0ff;
+    }
+
+    /* Оң жақтағы контент */
+    .content {
+        flex: 1;
+        padding: 20px;
+        position: relative;
+    }
+
+    .content h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #003f7f;
+    }
+
+    .note {
+        font-size: 15px;
+        margin-bottom: 20px;
+        color: #444;
+    }
+
+    /* Карта/сурет */
+    .image-box {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #dce3ef;
+        border-radius: 10px;
+        background: white;
+
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s ease;
+    }
+
+    .image-box.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .image-box img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+    }
+    /* ===== 页面背景（浅渐变） ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f9f9, #e6f0ff);
+    font-family: Arial, sans-serif;
+}
+
+/* ===== 主布局（左右结构） ===== */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+
+/* ===== 左侧选择菜单 ===== */
+.left-box {
+    width: 30%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.1);
+}
+
+.left-box select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* ===== 右侧图片显示区 ===== */
+.right-box {
+    width: 70%;
+    background: #ffffff;
+    padding: 20px;
+    min-height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 图片淡入动画 */
+.right-box img {
+    max-width: 100%;
+    max-height: 450px;
+    border-radius: 10px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    background: #1a1a1a; /* терең қара фон */
+    color: #f0f0f0;      /* мәтіннің түсі ашық */
+    font-family: Arial, sans-serif;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+button, input, select, textarea {
+    background: #333;         /* батырмалар мен енгізу алаңының фоны */
+    color: #f0f0f0;
+    border: 1px solid #555;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, input:hover, select:hover, textarea:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2a2a2a;
+    transition: background 0.5s ease;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Сол жақ -->
+    <div class="sidebar">
+        <h2>Металл таңдау</h2>
+        <table>
+            <tr><td onclick="selectMetal('cu')">Мыс (Cu)</td></tr>
+            <tr><td onclick="selectMetal('zn')">Мырыш (Zn)</td></tr>
+            <tr><td onclick="selectMetal('cd')">Кадмий (Cd)</td></tr>
+        </table>
+    </div>
+
+    <!-- Оң жақ -->
+    <div class="content">
+        <h1>Металдардың Қазақстан бойынша таралуы</h1>
+        <div class="note">Сол жақтағы тізімнен металды таңдаңыз → карта осында көрсетіледі.</div>
+
+        <div class="image-box" id="metalImageBox">
+            <img id="metalImage" src="" alt="">
+        </div>
+    </div>
+</div>
+
+<script>
+function selectMetal(metal) {
+    const imageBox = document.getElementById("metalImageBox");
+    const img = document.getElementById("metalImage");
+
+    imageBox.classList.remove("show");
+
+    setTimeout(() => {
+        if (metal === "cu") {
+            img.src = "https://uploads.onecompiler.io/445muc5hx/445x475d8/11.jpg"; 
+        }
+        else if (metal === "zn") {
+            img.src = "https://uploads.onecompiler.io/445muc5hx/445x475d8/22.jpg";
+        }
+        else if (metal === "cd") {
+            img.src = "https://uploads.onecompiler.io/445muc5hx/445x475d8/33.jpg";
+        }
+
+        imageBox.classList.add("show");
+    }, 200);
+}
+</script>
+
+</body>
+</html>
